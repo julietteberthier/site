@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNI'RUN</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Banner Section -->
+    <div class="banner">
+        <div class="container">
+            <h1>UNI'RUN, une course solidaire</h1>
+            <h2>Un projet collectif et engagé</h2>
+            <a href="#form-section" class="btn-blue">Rejoindre le projet</a>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <h2>Rejoindre le projet</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/team.jpg" alt="Équipe">
+                <h3>Nous soutenir</h3>
+            </div>
+            <div class="card">
+                <img src="images/novembre.jpeg" alt="Édition de novembre">
+                <h3>L'édition de novembre</h3>
+            </div>
+            <div class="card">
+                <img src="images/avril.jpg" alt="Édition d'avril">
+                <h3>L'édition d'avril</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Section -->
+    <div id="form-section" class="container">
+        <h2>Inscrivez-vous dès maintenant</h2>
+        <form action="submit-form.php" method="POST">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" rows="5" placeholder="Pourquoi souhaitez-vous participer ?"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+        <div data-tf-live="01JEPF94W77JJH15KCCK2GY1NM"></div>
+        <script src="//embed.typeform.com/next/embed.js"></script>
+    </div>
+</body>
+</html>

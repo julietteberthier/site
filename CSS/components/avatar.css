@@ -1,0 +1,5 @@
+.avatar {
+    width: 100%;
+    height: auto;
+    border: 2px solid #000; /* Bordure noire de 2 pixels */
+}

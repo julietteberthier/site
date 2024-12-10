@@ -1,0 +1,267 @@
+/* Import des polices */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&family=Lora&display=swap");
+
+/* Import des composants */
+@import url("components/container.css");
+@import url("components/avatar.css");
+@import url("components/button.css");
+@import url("components/banner.css");
+
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Titres */
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/* Liens */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Avatars */
+/* Avatars */
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #000; /* Bordure noire de 2 pixels */
+}
+
+/* Cards Container */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacement entre les cartes */
+    justify-content: center; /* Centrer les cartes */
+    margin-top: 20px; /* Marges supérieures */
+}
+
+* Effets interactifs sur les cartes */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin: 10px;
+    flex-basis: 280px;
+    flex-grow: 1;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Soulève légèrement la carte */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Accentuation de l'ombre */
+}
+
+.card:active {
+    transform: translateY(-5px); /* Réduction de l'élévation */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Formulaire */
+#form-section {
+    background-color: #f9f9f9; /* Fond clair pour contraster */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+#form-section h2 {
+    font-family: 'Raleway', sans-serif;
+    color: #357265;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+#form-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#form-section input, #form-section textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+#form-section button {
+    background-color: #357265;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#form-section button:hover {
+    background-color: #285a50;
+    transform: scale(1.05);
+}
+
+#form-section button:active {
+    transform: scale(1);
+}
+
+/* Compatibilité avec Typeform */
+[data-tf-live] {
+    width: 100%;
+    max-width: 600px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+/* Individual Card */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Ombre adoucie */
+    border-radius: 6px;
+    margin: 10px;
+    flex-basis: 280px;
+    flex-grow: 1;
+    max-width: 300px; /* Limite la largeur */
+}
+
+.card img {
+    width: 150px;
+    border-radius: 6px;
+}
+
+.card h3 {
+    flex-grow: 1;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #357265; /* Vert foncé */
+}
+
+/* Bouton principal */
+.btn-blue {
+    background-color: #357265;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-blue:hover {
+    background-color: #285a50;
+    cursor: pointer;
+    transform: scale(1.05); /* Agrandissement léger */
+}
+
+.btn-blue:focus {
+    outline: 3px solid #70a39f;
+    outline-offset: 2px;
+}
+
+/* Bannière */
+.banner {
+    position: relative;
+    background-color: #357265; /* Couleur temporaire */
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
+    min-height: 300px;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner h1, .banner h2, .banner a {
+    position: relative;
+    z-index: 2;
+}
+
+.banner h1 {
+    font-size: 50px;
+}
+
+.banner h2 {
+    font-size: 30px;
+    font-weight: lighter;
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+/* Conteneur */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px; /* Marges internes pour un espacement agréable */
+}
+
+/* Media Queries */
+@media (max-width: 960px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 720px) {
+    .container {
+        max-width: 80%;
+    }
+    .card {
+        flex-basis: 100%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 540px) {
+    .container {
+        max-width: 95%;
+    }
+    .banner h1 {
+        font-size: 36px;
+    }
+    .banner h2 {
+        font-size: 20px;
+    }
+}
